@@ -39,9 +39,13 @@ $(document).ready(function() {
       // }
       window.dancers[i].lineUp();
     }
-    for (var i = 0; i < 100; ++i) {
-
-    }
+    // for (var i = 0; i < 100; ++i) {
+    //   console.log('grrr');
+    //   for (var j = 0; j < window.dancers.length; ++j) {
+    //     console.log(i);
+    //     window.dancers[j].setPosition(i * 10 + j * 10 + 50, $('body').width());
+    //   }
+    // }
   });
 });
 
