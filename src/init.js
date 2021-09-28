@@ -39,6 +39,9 @@ $(document).ready(function() {
       // }
       window.dancers[i].lineUp();
     }
+    for (var i = 0; i < 100; ++i) {
+
+    }
   });
 });
 
