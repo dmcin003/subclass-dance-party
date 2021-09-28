@@ -15,10 +15,18 @@ var makeBernieSandersDancer = function(top, left, timeBetweenSteps) {
 makeBernieSandersDancer.prototype = Object.create(makeBlinkyDancer.prototype);
 makeBernieSandersDancer.prototype.constructor = makeBernieSandersDancer;
 
+
+
 makeBernieSandersDancer.prototype.hasMittens = function () {
   return true;
 };
 
 makeBernieSandersDancer.prototype.neatGloveColors = function () {
   return 'brown, gray, white';
+};
+
+makeBernieSandersDancer.prototype.lineUp = function () {
+  var top = this.top;
+  var left = $('body').width() / 2;
+  this.setPosition(top, left);
 };

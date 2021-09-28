@@ -18,7 +18,7 @@ makeBlinkyDancer.prototype.step = function() {
   this.$node.toggle();
 };
 
-makeBlinkyDancer.prototype.lineup = function () {
+makeBlinkyDancer.prototype.lineUp = function () {
   // var dancers = document.getElementById('root').dancers;
   // for (var i = 0; i < dancers.length; ++i) {
 

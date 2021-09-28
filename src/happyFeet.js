@@ -10,11 +10,12 @@ var makeHappyFeet = function(top, left, timeBetweenSteps) {
 makeHappyFeet.prototype = Object.create(makeBlinkyDancer.prototype);
 makeHappyFeet.prototype.constructor = makeHappyFeet;
 
-makeHappyFeet.prototype.step = function () {
-  makeDancer.prototype.step.call(this);
-  this.setPosition( $('body').height() * Math.random(), $('body').width() * Math.random());
-  this.$node.fadeToggle();
-};
+// makeHappyFeet.prototype.step = function () {
+//   this.timeBetweenSteps = 1000;
+//   makeDancer.prototype.step.call(this);
+//   this.setPosition( $('body').height() * Math.random(), $('body').width() * Math.random());
+//   this.$node.fadeToggle();
+// };
 
 
 makeHappyFeet.prototype.doesWaddle = function () {
@@ -26,4 +27,10 @@ makeHappyFeet.prototype.fibo = function (int) {
     return int;
   }
   return this.fibo(int - 1) + this.fibo(int - 2);
+};
+
+makeHappyFeet.prototype.lineUp = function () {
+  var top = this.top;
+  var left = $('body').width() / 2;
+  this.setPosition(top, left);
 };

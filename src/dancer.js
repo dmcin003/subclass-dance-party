@@ -35,7 +35,8 @@ makeDancer.prototype.setPosition = function(top, left) {
   this.$node.css(styleSettings);
 };
 
-makeDancer.prototype.lineup = function () {
+makeDancer.prototype.lineUp = function () {
+  console.log('this is the line up functuion');
   var width = $('body').width;
   this.setPosition(this.top, width / 50);
 };
