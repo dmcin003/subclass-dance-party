@@ -1,5 +1,6 @@
 $(document).ready(function() {
   window.dancers = [];
+  var music = new Audio('/src/egypt.wav');
 
   $('.addDancerButton').on('click', function(event) {
     /* This function sets up the click handlers for the create-dancer
@@ -32,6 +33,7 @@ $(document).ready(function() {
   });
 
   $('.lineupButton').on('click', function () {
+    music.play();
     for (var i = 0; i < window.dancers.length; ++i) {
       // if (window.dancers[i] instanceof makeDancer){
       // }
