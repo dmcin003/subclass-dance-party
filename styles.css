@@ -31,3 +31,12 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 
+.blinkydancer {
+  border: 10px solid rebeccapurple;
+  border-radius:10px;
+  position: absolute;
+}
+
+.blinkydancer:hover {
+  border: 10px solid limegreen;
+}

@@ -28,9 +28,3 @@ makeHappyFeet.prototype.fibo = function (int) {
   }
   return this.fibo(int - 1) + this.fibo(int - 2);
 };
-
-makeHappyFeet.prototype.lineUp = function () {
-  var top = this.top;
-  var left = $('body').width() / 2;
-  this.setPosition(top, left);
-};

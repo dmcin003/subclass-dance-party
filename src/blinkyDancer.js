@@ -1,6 +1,7 @@
 var makeBlinkyDancer = function(top, left, timeBetweenSteps) {
   // var blinkyDancer = makeDancer(top, left, timeBetweenSteps);
   makeDancer.call(this, top, left, timeBetweenSteps);
+  this.$node = $('<span class="blinkydancer"></span>');
   // we plan to overwrite the step function below, but we still want the superclass step behavior to work,
   // so we must keep a copy of the old version of this function
 };
@@ -23,6 +24,6 @@ makeBlinkyDancer.prototype.lineUp = function () {
   // for (var i = 0; i < dancers.length; ++i) {
 
   // }
-  var width = $('body').width;
-  this.setPosition(this.top, width / 50);
+  var width = $('body').width();
+  this.setPosition(this.top, width / 2);
 };
