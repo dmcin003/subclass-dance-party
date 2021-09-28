@@ -6,9 +6,7 @@ var makeBernieSandersDancer = function(top, left, timeBetweenSteps) {
   // {'backgroundImage': 'url("/src/download.png")'});
   // this.step();
   this.setPosition(top, left);
-  this.$node.mouseover(function() {
-    $node.css('height')
-  });
+
 
 
   //;
@@ -16,6 +14,8 @@ var makeBernieSandersDancer = function(top, left, timeBetweenSteps) {
 
 makeBernieSandersDancer.prototype = Object.create(makeBlinkyDancer.prototype);
 makeBernieSandersDancer.prototype.constructor = makeBernieSandersDancer;
+
+
 
 makeBernieSandersDancer.prototype.hasMittens = function () {
   return true;
