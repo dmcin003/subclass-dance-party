@@ -3,6 +3,8 @@ body, html{
 }
 body{
   margin: 0px;
+  width: 100vw;
+  background-size: 100%;
   background-image: url("blue-universe.jpeg");
   font-size: 18px;
 }
@@ -30,6 +32,13 @@ body, a:link, a:visited, a:active{
   border-radius:20px;
   position:absolute;
 }
+.bSanders{
+  border:10px solid brown;
+  border-radius:20px;
+  position:absolute;
+  transform: rotate(0deg);
+  transition: transform 3s linear;
+}
 
 .blinkydancer {
   border: 10px solid rebeccapurple;
@@ -39,4 +48,12 @@ body, a:link, a:visited, a:active{
 
 .blinkydancer:hover {
   border: 10px solid limegreen;
+}
+
+.centerDiv {
+  position: relative;
+  top: 50vh;
+  left: 50vw;
+  transform: rotate(0deg);
+  transition: transform 0.7s linear;
 }

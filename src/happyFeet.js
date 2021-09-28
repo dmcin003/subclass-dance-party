@@ -3,7 +3,7 @@ class makeHappyFeet extends makeBlinkyDancer {
     super(top, left, timeBetweenSteps);
     this.left = left;
     this.top = top;
-    this.$node = $('<span class="dancer"><img src="/src/hf.png" height="50px" width="25px" position="absolute" /></span>');
+    this.$node = $('<span class="dancer"><img src="/src/hf.png" height="100px" width="50px" position="absolute" /></span>');
 
     this.setPosition(top, left);
   }
