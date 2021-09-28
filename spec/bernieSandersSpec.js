@@ -33,10 +33,10 @@ describe('bernieSanders', function() {
   });
 
   describe('addedMethods', function () {
-    xit('should return true on having neat mittens', function () {
+    it('should return true on having neat mittens', function () {
       expect(bernieSanders.hasMittens()).to.be.true;
     });
-    xit('should return brown, gray, white on having neatGloveColors', function () {
+    it('should return brown, gray, white on having neatGloveColors', function () {
       expect(bernieSanders.neatGloveColors()).to.eql('brown, gray, white');
     });
   });
